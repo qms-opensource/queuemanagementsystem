@@ -1,0 +1,66 @@
+﻿<style type="text/css">
+.navbar-absolute{ padding-top:0px;}
+.form-control {
+	background-size: 0px !important;
+	background-repeat: no-repeat !important;
+	background-color: transparent !important;
+	transition: background 0s ease-out !important;
+	float: none !important;
+	box-shadow: none !important;
+	border: 1px solid #b4b4b4 !important;
+	border-radius: 5px !important;
+	font-weight: 400 !important;
+	padding-left: 5px!important;
+	background-position: none!important;
+}
+	.main-panel {
+		position: none !important;
+		float: none !important;
+		width: auto !important
+	}
+	.panel-heading {
+		padding: 26px 15px !important;
+	}
+	.panel-heading{
+	background-color: #5cb85c!important;
+	color:#fff !important;font-weight:bold; font-size: large;}
+    @media only screen and (max-width: 1285px)
+    {.sm-logo{
+        display: contents !important;
+        width:auto;
+    }
+    .bg-logo{
+        display: none;
+        width:auto !important;
+    }
+    }
+    @media only screen and (min-width: 1286px)
+    {.sm-logo{
+        display: none !important;
+        width:auto;
+    }
+    .bg-logo{
+        display: contents !important;
+        width:auto;
+    }
+    }
+    body{ background-color: #fff!important; }
+	 .ogo { width: 99px;
+           height: 99px;
+		   position: relative!important;
+		   margin-top: 10px;
+	 }
+
+     strong { font-size: 13px!important;}
+	.bg-logo-login {
+		text-align: center;
+		display: block !important;
+		background: #34659d;
+		overflow: auto;
+		height: 122px;
+	}
+	@media only screen and (max-width: 680px)
+	{.bg-logo-login{
+		display: none !important;
+	}
+</style>

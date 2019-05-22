@@ -1,0 +1,108 @@
+@extends('layouts.qmlayout')
+@section('content')
+<div class="col-md-12">
+	<div class="card">
+		
+		<div class="card-content">
+		<div class="card-header" data-background-color="purple">
+			<h4 class="title">Room</h4>
+			<p class="category">Add Room</p>
+		</div>
+			<form name="manageroom" method="post" action="{{url('/manage-rooms/update')}}" class="formValidate" id="formValidate" novalidate="novalidate">
+				<div class="row">
+					{{ csrf_field() }}
+					<div class="col-md-4">
+					<div class="col-md-1 reqStar">*</div>
+					<div class="col-md-11">
+						<div class="form-group label-floating">
+							<label class="control-label">Room Name</label>
+							<input type="text" name="room_name" maxlength="30" value="{{ old('room_name', $roomData->room_name) }}" class="form-control">
+							<span class="has-error">{{ $errors->edit->first('room_name') }}</span>
+							<input type="hidden" name="id" value="{{$roomData->id}}" />
+						</div>
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="col-md-1 reqStar">*</div>
+					<div class="col-md-11">
+						<div class="form-group label-floating">
+							<label class="control-label">Department</label>
+							<select name="department" value="{{ old('department', $roomData->department ) }}" class="department form-control">
+								<option value=""></option>
+								@foreach($departments as $department)
+									<option value="{{$department->id}}"
+									@if ($department->id == old('department', $roomData->department))
+										selected="selected"
+									@endif
+									>{{$department->name}}</option>
+								@endforeach
+							</select>
+							<span class="has-error">{{ $errors->edit->first('department') }}</span>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-4">
+					<div class="col-md-1 reqStar">*</div>
+					<div class="col-md-11">
+						<div class="form-group label-floating">
+							<label class="control-label">Hall</label>
+							<select name="hall" value="{{ old('hall') }}" class="form-control">
+								<option value=""></option>
+								@foreach($halls as $hall)
+									<option value="{{ $hall->id }}"
+									@if($hall->id == old('hall', $roomData->hall))
+										selected="selected"
+									@endif
+									>{{ $hall->name }}</option>
+								@endforeach
+							</select>
+							<span class="has-error">{{ $errors->edit->first('hall') }}</span>
+						</div>
+					</div>
+					</div>
+					
+					</div>
+				<button type="submit" class="btn btn-primary pull-right">Update Room</button>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+	</div>
+</div>
+@endsection
+@section('script')
+<script>
+	$(document).ready(function(){
+		$("#formValidate").validate({
+			rules: {
+				room_name: {
+					required: true,
+					minlength: 2,
+					maxlength: 30,
+					characterSet: true
+				},
+				hall: {
+					required: true,
+				},
+				department: {
+					required: true,
+				}
+			},
+			messages: {
+				room_name: {
+					required: "Please enter room name",
+					minlength: "Room name must consist of at least 2 characters",
+					maxlength: "Max of 30 characters allowed",
+					characterSet: "Letters, numbers,space and underscores only please"
+				},
+				hall: {
+					required: "Please select a hall",
+				},
+				department: {
+					required: "Please select a department",
+				}
+			}
+		});
+		
+	}); 
+</script>
+@endsection

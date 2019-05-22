@@ -1,0 +1,75 @@
+label.error{
+	color: red; 
+	font-size: 13px;
+}
+
+.t-margin-left{
+	margin-left: 15px;
+}
+.t-margin-right-sm{
+	margin-right: 10px;
+}
+.t-manage{
+	margin-top: -3px;
+}
+.reqStar{padding-top: 45px !important; color: red !important; ;padding-right: 0 !important;}
+@media only screen and (max-width: 980px)
+{.sm-logo{
+	display: contents !important;
+	//display: none !important;
+	width:auto;
+}
+.bg-logo{
+	display: block!important;
+	width:auto !important;
+}
+.logo1 { width:780px!important; }
+
+}
+
+@media only screen and (max-width: 1285px)
+{.sm-logo{
+	display: contents !important;
+	//display: none !important;
+	width:auto;
+}
+.bg-logo{
+	display: block!important;
+	width:auto !important;
+}
+
+}
+@media only screen and (min-width: 1286px)
+{.sm-logo{
+	//display: none !important;
+      display: contents !important;
+	width:auto;
+}
+.bg-logo{
+	 display: contents !important;
+	/* display: none !important */
+	width:auto;
+}
+
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .navbar-right{margin-top: -105px;} 
+}
+
+.header-data{background:#34659d;height: 123px;}
+.dashboard-tbl td{text-align:center;}
+.dashboard-tbl .room td{text-align: center; font-weight: bold;}
+.t-left{ float: left;} 
+.t-right{ float: right;}
+.count-all{ margin: 33px 0 0 0; font-weight: bold;}
+/* .dep_select{float:right;} */
+.depart-title{ text-align:left !important; font-weight: bold; background-color: #eaf3e9; border-right:1px solid #eaf3e9; padding-left: 10px;}
+.room-title{ text-align:center; font-weight: bold; padding:5px 10px; background-color: #e0e0e0;}
+.room-info{background-color: #d9edff; }
+.t-font-normal{font-weight: normal;}
+.depart-info{text-align:right !important; font-weight: bold; background-color: #eaf3e9; border:0px; padding-right: 10px; }
+.card-header .col-md-4{z-index: 9999;}
+	.head-info{ color: #34659d; font-weight: bold;}
