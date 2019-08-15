@@ -1,4 +1,4 @@
-<p><b>About:</b> – QMS(Queue Management System) is ideal for hospitals, clinics where people have to wait in queuing systems line to avail services. They are notified about the approximate time left for their turn to come, via SMS on the registered mobile number. Doctors can manage the patients and their turns.</p>
+<p><b>About:</b> – Queue Management System is an application to help hospitals/clinics where people have to wait in queue to avail hospital services. People will be notified via SMS on approximate time left for their turn. The doctors can manage/change the patients and their turns.</p>
 <br>
 <br>
 
