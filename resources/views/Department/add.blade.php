@@ -64,7 +64,7 @@
 			messages: {
 				name: {
 					required: "Please enter department name",
-					minlength: "Department name must consist of at least 2 characters",
+					minlength: "Department name must have at least 2 characters",
 					maxlength: "Max 30 characters allowed",
 					characterSet: "Letters, numbers, underscores,space only please"
 				}
