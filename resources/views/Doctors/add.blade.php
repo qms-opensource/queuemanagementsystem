@@ -142,7 +142,7 @@
 			messages: {
 				name: {
 					required: "Please enter doctor name",
-					minlength: "Doctor name must consist of at least 2 characters",
+					minlength: "Doctor name must have at least 2 characters",
 					maxlength: "Max of 30 characters allowed",
 					alphaspace: "Letters, space only please"
 				},
