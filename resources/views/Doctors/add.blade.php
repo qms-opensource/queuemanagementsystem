@@ -143,7 +143,7 @@
 				name: {
 					required: "Please enter doctor name",
 					minlength: "Doctor name must have at least 2 characters",
-					maxlength: "Max of 30 characters allowed",
+					maxlength: "Maximum 30 characters are allowed",
 					alphaspace: "Letters, space only please"
 				},
 				phone: {
